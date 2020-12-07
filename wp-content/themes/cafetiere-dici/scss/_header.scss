@@ -58,9 +58,10 @@
     position: relative;
 
     & p {
-        font-family: "open_sansregular", sans-serif;
         margin-top: 0;
         margin-bottom: 1rem;
+        font-family: "open_sansregular", sans-serif;
+        white-space: pre-line;
 
         @include max-width-47em {
             padding: 1rem;
@@ -88,6 +89,9 @@ header>.actie-bar {
 }
 
 header>.top-bar {
+    position: relative;
+    z-index: 11;
+    background: white;
     border-bottom: map-get($borders, header);
 }
 

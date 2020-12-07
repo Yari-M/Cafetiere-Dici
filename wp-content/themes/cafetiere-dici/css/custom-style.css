@@ -70,9 +70,10 @@
   position: relative;
 }
 .actie__info p {
-  font-family: "open_sansregular", sans-serif;
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: "open_sansregular", sans-serif;
+  white-space: pre-line;
 }
 @media screen and (max-width: 47.9375em) {
   .actie__info p {
@@ -104,6 +105,9 @@ header > .actie-bar + .pure-g {
 }
 
 header > .top-bar {
+  position: relative;
+  z-index: 11;
+  background: white;
   border-bottom: 6px solid #B78142;
 }
 
@@ -1056,6 +1060,12 @@ img {
   right: 1rem;
   width: 50px;
   height: 50px;
+}
+@media screen and (max-width: 31.25em) {
+  .github__logo {
+    position: static;
+    margin: 0 auto 2rem;
+  }
 }
 
 .contact-row, .maps-row {
