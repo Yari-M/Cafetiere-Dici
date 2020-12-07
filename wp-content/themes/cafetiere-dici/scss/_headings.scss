@@ -1,0 +1,156 @@
+.pure-g.title,
+.title {
+    text-align: center;
+
+    &.no-margin h2, h3, h4, h5, h6 {
+        margin: 0!important;
+    }
+}
+
+.pure-g.title {
+    @include max-width-568px {
+        padding: 0;
+    }
+}
+
+.actie_titel {
+    @include max-width-48em {
+        margin-bottom: 1rem;
+    }
+}
+
+.panel-grid-cell {
+    @include max-width-568px {
+        width: 100%!important;
+    }
+}
+
+.pure-u-1.title {
+    word-break: break-word;
+
+    @include max-width-47em {
+        font-size: 1.8rem;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Coffee at Midnight Demo'!important;
+    padding: 1rem;
+    font-weight: normal;
+    background: #E4E0D5;
+    border: map-get($borders, h1);
+    border-radius: pxToRem(12px);
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    margin: 3rem 0;
+    width: 18em!important;
+
+    @include max-width-48em {
+        width: 90%;
+        padding: 1rem 3rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: pxToRem(-50px);
+        width: 100px;
+        height: 100px;
+        background: url(../img/icons/cafe_latte.svg) no-repeat;
+
+        @include ie10-and-above-support {
+            top: -15px;
+        }
+
+        @include min-width-768px-and-max-width-928px {
+            top: 5px;
+            width: 80px;
+            height: 80px;
+        }
+
+        @include max-width-47em {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: url("../img/icons/bean.svg");
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: pxToRem(60px);
+        height: pxToRem(60px);
+
+        @include min-width-768px-and-max-width-928px {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        @include max-width-47em {
+            display: none;
+        }
+
+        @include max-width-58em {
+            top: 10%;
+            right: -24px;
+        }
+    }
+}
+
+#marker-content h1 {
+    margin: initial;
+    padding: initial;
+    font-weight: initial;
+    background: initial;
+    border: initial;
+    border-radius: initial;
+    text-align: initial;
+
+    &::before {
+        content: initial;
+    }
+
+    &::after {
+        content: initial;
+    }
+}
+
+h2 {
+    margin-bottom: 3rem;
+   
+    @include min-width-568px {
+        width: 80%!important;
+    }
+
+    @include min-width-48em {
+        width: 25em!important;
+    }
+}
+
+h3,
+h5,
+span.bedrijfsnaam {
+    font-family: 'Coffee at Midnight Demo' !important;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.pure-g.koffieproducerende-landen h5,
+.pure-g.koffie-proces h5 {
+    @include max-width-48em {
+        position: relative;
+        left: 1rem;
+        text-align: center;
+    }
+}
+
+.pure-g.koffieproducerende-landen h5 {
+    @include min-width-48em {
+        margin-left: 6rem;
+    }
+}

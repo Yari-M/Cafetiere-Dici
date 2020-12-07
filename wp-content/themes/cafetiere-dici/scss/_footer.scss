@@ -1,0 +1,220 @@
+footer {
+    padding: pxToRem2Val(24px, 88px);
+    background: map-get($primaryColors, footer);
+
+    @include max-width-1168px {
+        padding: 1.5rem 3.5rem;
+    }
+
+    @include min-width-48em-and-max-width-64em {
+        padding: 1rem;
+    }
+
+    @include max-width-48em {
+        padding: 1rem;
+    }
+
+    @include max-width-31em {
+        padding: 1rem;
+    }
+
+    @include edge-support {
+        padding: 1.5rem;
+    }
+
+    & .copy {
+        margin-bottom: 0;
+        color: white;
+        text-align: center;
+    }
+}
+
+footer ul li {
+    padding: .3rem 0;
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+}
+
+footer>.pure-g {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    &:nth-of-type(2) {
+        padding: 0 !important;
+    }
+
+    &.adres {
+        margin-bottom: pxToRem(40px);
+        padding: 1rem 6rem 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        border: 3px solid map-get($borders, footer-address);
+
+        @include min-width-48em-and-max-width-64em {
+            padding: 1rem 0 1rem 1rem;
+        }
+
+        @include max-width-31em {
+            padding: 1rem !important;
+        }
+    }
+
+    &>.pure-u-md-7-24 {
+        padding: pxToRem(20px);
+        border: 1px solid map-get($borders, footer-column);
+    }
+
+    &>.pure-u-md-7-24:last-of-type>div {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include ie10-and-above-support {
+            justify-content: space-around;
+
+            @include max-width-48em {
+                padding: 0 4rem;
+            }
+        }
+
+        @include edge-support {
+            padding: 0 20%;
+            justify-content: space-between;
+        }
+
+        @include min-width-1368px {
+            padding: 0 8rem;
+
+            @include edge-support {
+                padding: 0 6rem;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    & .social-icon {
+        width: 4rem;
+
+        @include min-width-568px-and-max-width-868px {
+            margin: 0 1.5rem;
+        }
+    }
+}
+
+footer h3 {
+    font-family: 'Coffee at Midnight Demo';
+    font-size: pxToRem(24px);
+    font-weight: normal;
+    letter-spacing: 4px;
+
+    @include min-width-768px-and-max-width-868px {
+        font-size: 1.4rem;
+    }
+}
+
+footer .pure-u-1.pure-u-md-8-24 {
+    @include max-width-48em {
+        margin-top: 1rem;
+    }
+}
+
+footer .address,
+.phone-number {
+    font-size: 24px;
+}
+
+.footer-last-row {
+    @include max-width-872px {
+        padding: 0;
+        background: #8B7156;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+footer .useful-details {
+    margin-top: 2rem;
+
+    @include min-width-48em {
+        text-align: center;
+    }
+
+    &>a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0 2rem;
+
+        @include max-width-48em {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0;
+            width: 49%;
+        }
+
+        @include max-width-37em {
+            display: block;
+        }
+
+        @include min-width-48em-and-max-width-64em {
+            padding: 0 .6rem;
+        }
+
+        @include width-48em {
+            padding: initial;
+        }
+    }
+
+    &>a:first-of-type {
+        padding-left: 0;
+    }
+}
+
+footer .widget.widget_text {
+    list-style: none;
+}
+
+footer #menu-footer-menu>li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+    @include max-width-872px {
+        width: 31% !important;
+    }
+
+    @include max-width-47em {
+        width: 100% !important;
+    }
+}
+
+.footer-column-3 {
+    @include max-width-872px {
+        border: 1px solid #fff;
+
+        & h3 {
+            text-align: center;
+        }
+    }
+
+    @include max-width-568px {
+        width: 100%;
+
+        @include edge-support {
+            &>div img {
+                margin: 0 3rem;
+            }
+        }
+    }
+}

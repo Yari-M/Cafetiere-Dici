@@ -1,0 +1,683 @@
+main {
+    margin-bottom: 40px;
+}
+
+main>.pure-g {
+    display: flex;
+    justify-content: center;
+
+    @include max-width-48em {
+        position: relative;
+        z-index: 10;
+        background: white;
+    }
+}
+
+.page-introduction {
+    margin: 0 auto 3rem;
+
+    @include min-width-1023px-and-max-width-1068px {
+        & .pure-u-md-18-24.pure-u-lg-14-24 {
+            width: 70.3333%;
+        }
+    }
+}
+
+.pure-g {
+    padding: 0 2rem;
+}
+
+.pure-img {
+    margin-bottom: 2rem;
+}
+
+// Page introduction column
+.pure-u-xl-14-24 { 
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .no-posts {
+    text-align: center;
+  }
+  
+  .picture {
+    & + p {
+      text-align: left;
+      padding-left: 1rem;
+    }
+  
+    @include max-width-568px {
+      margin-right: 0;
+      min-height: 1px;
+    }
+  }
+  
+  .img-right {
+    text-align: right;
+  
+    @include max-width-48em {
+      text-align: center;
+    }
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .actie {
+    @include max-width-568px {
+      flex-direction: column;
+    }
+  }
+  
+  .logo-leverancier {
+    text-align: center;
+  }
+  
+  .tekst-leverancier {
+    padding: 2rem 1.5rem;
+    background: map-get($primaryColors, light-brown-bg);
+    border: map-get($borders, brown-border-5px);
+  }
+  
+  .plantage  {
+    & .widget-title {
+      margin-bottom: 0;
+      padding: 1rem 3rem;
+      background: #8B7156;
+      color: white;
+      letter-spacing: 3px;
+  
+      @include min-width-48em {
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+      }
+    }
+  
+    & .textwidget {
+      padding: 1rem 2rem 2rem;
+      border: map-get($borders, brown-border-5px);
+    
+      @include min-width-48em {
+        padding: 1rem 3rem 3rem;
+      }
+    }
+  }
+  
+  .openingstijden th {
+    font-weight: normal;
+  }
+  
+  // Koffieproces
+  .koffie-proces > img {
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 5px solid #8b7156;
+    border-radius: 100%;
+    background: url(../img/Een_kopje_koffie.jpg) center/cover no-repeat;
+    background-color: #e6e0d4;
+  }
+  
+  .img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-placeholder {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  img {
+    border-style: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .github__logo {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-row, .maps-row {
+    width: 75%;
+    margin: 0 auto;
+  
+    @include max-width-67em {
+      width: 100%;
+      margin: 0;
+    }
+  
+    @include max-width-568px {
+      padding: 0;
+    }
+  }
+  
+  // Google Maps
+  #map {
+    width: 100%;
+    height: 450px;
+  }
+  
+  #bodyContent {
+    margin-bottom: 1rem;
+    line-height: 2;
+  
+    & img {
+      width: 40px!important;
+    }
+  
+    & > div {
+      display: flex;
+  
+    }
+  
+    & li {
+      list-style: none;
+      padding-left: 1rem;
+    }
+  }
+  
+  .maps-row {
+    margin-top: 5rem;
+  }
+  
+  .maps-row h3 {
+    @include max-width-568px {
+      padding: 0 2rem;
+      text-align: center;
+    }
+  }
+  
+  .gm-style-iw {
+    border: map-get($borders, brown-border-5px)!important;
+    background: map-get($primaryColors, menu-item-bg)!important;
+  }
+  
+  .gm-style .gm-style-iw-d::-webkit-scrollbar {
+    width: 18px;
+    height: 12px;
+    -webkit-appearance: initial!important;
+    border: 1px solid #8b7156!important;
+    background: map-get($primaryColors, menu-item-bg)!important;
+  }
+  
+  .gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+    background: initial!important;
+  }
+  
+  // Forms
+  input,
+  textarea {
+    display: block;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border: 2px solid #8b7156;
+  }
+  
+  input[type=submit] {
+    padding: 1rem;
+    border: 5px solid #8b7156;
+    border-radius: 0.75rem;
+    background: #e6e0d4;
+  }
+  
+  .contact-informatie {
+    position: relative;
+    display: inline-block;
+  
+    white-space: pre-line;
+    border: map-get($borders, brown-border-5px);
+    background: #E4E0D5;
+  
+    & ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  
+    & img {
+      margin-bottom: 2rem;
+  
+      @include width-48em {
+        max-width: 75%!important;
+      }
+    }
+  
+    & > div {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  
+    @include max-width-48em {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .contact-informatie {
+      padding: 1rem 2.5rem;
+  
+      &::before,
+      &::after {
+          content: url(../img/icons/bean.svg);
+          position: absolute;
+          right: -1rem;
+          width: 45px;
+  
+          @include max-width-48em {
+              right: 1rem;
+          }
+      }
+  
+      &::before, 
+      & i[icons]::before {
+          top: -1.5rem;
+      }
+  
+      &::after,
+      & i[icons]::after {
+          bottom: -1.5rem;
+      }
+  
+      &::before {
+          content: url(../img/icons/bean.svg);
+          position: absolute;
+          width: 45px;
+  
+          @include max-width-48em {
+              right: 1rem;
+          }
+      }
+  
+      &::after {
+          content: url(../img/icons/bean.svg);
+          position: absolute;
+          width: 45px;
+  
+          @include max-width-48em {
+              right: 1rem;
+          }
+      }
+  
+      @include max-width-568px {
+        width: 100%;
+      }
+  }
+  
+  i[icons] {
+      &::before,
+      &::after {
+          content: url('../img/icons/cafe_latte.svg');
+          position: absolute;
+          left: -2rem;
+          width: 70px;
+          
+          @include max-width-48em {
+              left: 1rem;
+          }
+      }
+  }
+  
+  i[icons]::before {
+      top: -1.5rem;
+  }
+  
+  i[icons]::after {
+      bottom: -1rem;
+  }
+  
+  i[icons]::before {
+      content: url('../img/icons/cafe_latte.svg');
+      position: absolute;
+      top: -1rem;
+      width: 70px;
+  }
+  
+  i[icons]::after {
+      content: url('../img/icons/cafe_latte.svg');
+      position: absolute;
+      width: 70px;
+  
+      @include max-width-48em {
+          left: 1rem;
+      }
+  }
+  
+  #pg-8-0, #pg-8-1, #pg-8-2, #pg-8-3, #pl-8 .so-panel {
+    margin-bottom: 0!important;
+  }
+  
+  .wp-block-group__inner-container {
+    justify-content: center;
+    display: flex;
+  }
+  
+  #cboxTitle {
+    bottom: -5px;
+  }
+  
+  .custom-slider {
+    margin: 0 auto;
+  }
+
+// temp sales
+main .pure-g.temp-sale {
+    justify-content: center;
+    margin-bottom: 3.5rem;
+
+    &:nth-child(odd) {
+        background: url('../img/koffiestruik_bg.png') no-repeat;
+    }
+
+    &:nth-child(even) {
+        background: url('../img/koffiebonen_bg.png') no-repeat;
+    }
+
+    &>.pure-u-md-18-24 {
+        padding: 1rem 3rem;
+        margin: -1rem 0;
+        border: map-get($borders, brown-border-2px);
+        border-radius: 12px;
+        background: map-get($primaryColors, light-brown-bg);
+
+        @include max-width-31em {
+            margin-top: -1rem;
+        }
+    }
+
+    @include max-width-568px {
+        padding: 0 1rem;
+    }
+}
+
+#acties > div {
+    @include max-width-48em {
+        padding: 0!important;
+    }
+}
+
+.temp-sale-img {
+    @include max-width-568px {
+        margin: 0 auto;
+    }
+}
+
+a.more {
+    padding: 1.5rem;
+    width: 30%;
+    border-radius: 12px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    border: map-get($borders, brown-border-5px);
+    background: map-get($primaryColors, light-brown-bg);
+
+    @include min-width-1528px {
+        width: 25%;
+    }
+
+    @include max-width-48em {
+        width: 60%;
+    }
+
+    @include min-width-768px-and-max-width-928px {
+        width: 35%;
+    }
+
+    @include width-48em {
+        width: 45%;
+    }
+
+    @include max-width-568px {
+        width: 100%;
+    }
+}
+
+div.openingstijden-col {
+    display: flex;
+    justify-content: center;
+
+    @include min-width-768px-and-max-width-928px {
+        margin-left: 4rem;
+    }
+}
+
+table.openingstijden {
+    font-family: map-get($font-family, 'Coffee at midnight');
+    font-size: pxToRem(20px);
+    border-collapse: collapse;
+
+    & th,
+    td {
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+
+    & th+td {
+        padding-left: 3rem;
+        @include max-width-31em {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.h3-counter-area {
+    counter-reset: section;
+    padding: 0 2rem;
+
+    @include max-width-568px {
+        padding: 0 .5rem;
+    }
+}
+
+.pure-g.koffieproducerende-landen,
+.pure-g.koffie-proces {
+    padding: 0;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .country-bg-col {
+        text-align: center;
+    }
+
+    & img.country-bg {
+        max-width: 100%;
+    }
+}
+
+.pure-g.koffieproducerende-landen {
+    & .country-icon {
+        position: absolute; 
+        width: 75px;
+        height: 75px;
+        top: 1rem;
+
+    @include max-width-48em {
+        top: -1.5rem;
+        left: 20%;
+    }
+
+    @include max-width-31em {
+        left: 0;
+    }
+}
+
+    & > div:nth-child(1) {
+        @include max-width-48em {
+            padding: 0!important;
+        }
+    }
+
+    & .textwidget {
+        @include max-width-48em {
+            position: relative;
+        }
+    }
+
+    @include min-width-48em {
+        & .pure-u-1.pure-u-md-11-24 {
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
+
+    & .pure-u-md-11-24 {
+        position: absolute;
+        padding: 1rem 3rem!important;
+        width: 60%;
+
+        @include max-width-48em {
+            position: static;
+            width: 100%;
+            padding: 1rem 2rem!important;
+            margin-right: 0;
+            background: rgb(255, 255, 255);
+            background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+            background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#1a3741", GradientType=1);
+        }
+    }
+}
+
+#pl-55 > div:not(:first-child) {
+
+    &:nth-child(even) {
+        & .pure-u-md-11-24 {
+            margin-right: 10vw;
+            position: absolute;
+            right: 0;
+            background: rgb(255, 255, 255);
+            background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 1) 50%);
+            background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 1) 50%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 1) 50%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+        
+            @include min-width-48em-and-max-width-80em {
+                margin-right: 10vw;
+                width: 60%;
+            }
+
+            @media only screen and (max-width: 767px) {
+                margin-right: 0;
+                position: static;
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        direction: rtl;
+
+        & .pure-u-md-11-24 {
+            direction: ltr;
+            margin-left: 10vw;
+            position: absolute;
+            left: 0;
+            background: rgb(255, 255, 255);
+            background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.85) 20%);
+            background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.85) 20%);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.85) 20%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+        
+            @include min-width-48em-and-max-width-80em {
+                margin-left: 10vw;
+                width: 60%;
+            }
+
+            @media only screen and (max-width: 767px) {
+                margin-left: 0;
+                position: static;
+            }
+        }
+    }
+}
+
+div.pure-g.koffie-proces {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    &:nth-child(even) {
+        direction: rtl;
+    }
+}
+
+div.koffie-proces>.pure-u-md-3-24 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: red;
+    border: 5px solid #8b7156;
+    border-radius: 100%;
+    background: url(../img/Een_kopje_koffie.jpg) center/cover no-repeat;
+    background-color: map-get($primaryColors, light-brown-bg);
+}
+
+img.koffie-proces {
+    max-width: 100%;
+    height: auto;
+}
+
+div.proces-uitleg {
+    padding: 1rem 2rem 3rem;
+    border: map-get($borders, brown-border-2px);
+    border-radius: 12px;
+    background: map-get($primaryColors, light-brown-bg);
+
+    & p {
+        overflow-wrap: break-word;
+    }
+
+    &:nth-child(even) {
+        direction: ltr;
+    }
+
+    @include max-width-400px {
+        position: relative;
+    }
+
+    @include min-width-48em-and-max-width-64em {
+        width: 65%;
+    }
+}
+
+div.proces-uitleg>h3 {
+    display: flex;
+    align-items: baseline;
+    font-size: 2rem;
+
+    &::before {
+        counter-increment: section;
+        content: counter(section)"#";
+        margin-right: 2rem;
+        font-size: 3rem;
+        height: 55px;
+
+        @include max-width-400px {
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @include max-width-400px {
+        display: block;
+        text-align: center;
+    }
+}
+
+@include ie10-and-above-support {
+    .panel-grid-cell {
+        min-height: 1px;
+    }
+}

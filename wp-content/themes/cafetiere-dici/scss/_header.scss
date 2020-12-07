@@ -1,0 +1,288 @@
+@import 'assets';
+
+#top__button {
+    position: fixed;
+    right: 1.7rem;
+    bottom: 2.8rem;
+    padding: 1rem;
+    z-index: 9;
+    color: #fff;
+    background: map-get($primaryColors, footer);
+    text-decoration: none;
+    outline: 3px solid #fff;
+}
+
+.wp-block-column {
+    border: 1px solid red;
+}
+
+.no-script-notice {
+    display: none;
+}
+
+.actie-header {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background: #2a1d17;
+    border-bottom: initial;
+}
+
+.actie-social-media {
+    margin-top: 1rem;
+    width: 100% !important;
+
+    @include min-width-64em {
+        position: absolute;
+        top: 10%;
+        width: initial !important;
+        right: 7rem;
+    }
+}
+
+.actie-bar {
+    display: flex;
+    padding: 0 !important;
+    background: #2a1d17;
+
+}
+
+.actie__titel {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.actie__info {
+    position: relative;
+
+    & p {
+        font-family: "open_sansregular", sans-serif;
+        margin-top: 0;
+        margin-bottom: 1rem;
+
+        @include max-width-47em {
+            padding: 1rem;
+        }
+    }
+}
+
+header>.top-bar,
+header>.actie-bar {
+    padding: 2rem 0 1rem 2rem;
+
+    @include max-width-31em {
+        padding-right: 1rem;
+    }
+
+    &+.pure-g {
+        position: relative;
+        z-index: 10;
+        padding: 0;
+
+        @include ie10-and-above-support {
+            position: relative;
+        }
+    }
+}
+
+header>.top-bar {
+    border-bottom: map-get($borders, header);
+}
+
+.pure-g.video-home {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1;
+
+    & video {
+        width: 100%;
+        object-fit: cover;
+
+        @include min-width-48em-and-max-width-64em {
+            max-width: 135%;
+        }
+
+        @include max-width-47em {
+            position: initial;
+            height: 1% !important; // Used as a fix for mobile screens.  
+        }
+    }
+
+    @include max-width-47em {
+        & .logo-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+}
+
+#header-image {
+    width: 100%;
+    height: 1%; // used as a fix for mobile screens.
+}
+
+header .follow-us {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Coffee at Midnight Demo' !important;
+    font-size: 24px;
+
+    &>.text {
+
+        @include max-width-31em {
+            position: initial;
+        }
+
+        @include min-width-31em-and-max-width-62em {
+            position: absolute;
+
+            @include ie10-and-above-support {
+                position: static;
+            }
+        }
+    }
+
+    @include max-width-48em {
+        position: initial;
+        right: 0;
+        width: 35%;
+
+        @include ie10-and-above-support {
+            width: 35%;
+        }
+    }
+
+    @include max-width-31em {
+        display: none;
+    }
+
+    @include min-width-48em-and-max-width-64em {
+        position: initial;
+    }
+
+    @include min-width-1468px {
+        right: -6rem;
+    }
+}
+
+header .social-media {
+    display: flex;
+    justify-content: center;
+
+
+    @include max-width-48em {
+        width: 35%;
+
+        @include ie10-and-above-support {
+            width: 30%;
+        }
+    }
+
+    @include max-width-31em {
+        width: initial;
+
+        @include ie10-and-above-support {
+            width: 50%;
+        }
+    }
+}
+
+header .caffe-latte {
+    width: 96px;
+    height: 64px;
+
+    @include max-width-48em {
+        width: 5rem;
+    }
+
+    &-c {
+        @include max-width-48em {
+            width: 30%;
+        }
+
+        @include max-width-568px {
+            width: 25%;
+        }
+    }
+
+}
+
+header .social-icon {
+    margin: 0 1rem;
+    width: pxToRem(50px);
+
+    @include max-width-31em {
+        margin-right: 0;
+    }
+}
+
+header .logo-container {
+    position: absolute;
+
+    @include ie10-and-above-support {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @include max-width-47em {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include min-width-48em-and-max-width-64em {
+        width: 60%;
+    }
+
+    @include max-width-48em {
+        width: 100%;
+
+        &>a {
+            text-align: center;
+        }
+    }
+
+    @media only screen and (width: 48em) {
+        width: 60%;
+    }
+}
+
+header .logo {
+    width: pxToRem(350px);
+
+    @include min-width-48em {
+        height: pxToRem(350px);
+    }
+
+    @include max-width-48em {
+        width: 50vw;
+
+        @include ie10-and-above-support {
+            width: 75%;
+        }
+    }
+
+    @include width-48em {
+        width: 40vw;
+        transform: initial;
+        left: 0;
+    }
+
+    @include max-width-31em {
+        @include ie10-and-above-support {
+            width: 60%;
+        }
+    }
+
+    @include min-width-1468px {
+        width: 26rem;
+    }
+}

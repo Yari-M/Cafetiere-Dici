@@ -1,0 +1,108 @@
+// Custom box widths
+.width-58 {
+    width: 58.3333%;
+    margin: 0 auto;
+  
+    @include max-width-1224px {
+      width: 70.3333%;
+    } 
+  
+    @include max-width-64em {
+        width: 80%;
+    }
+  }
+  
+  .width-80 {
+    padding: 0 2rem;
+  
+    @include min-width-48em {
+      margin: 0 auto;
+      width: 95%;
+    }
+  
+    @include min-width-64em {
+      width: 85%;
+    }
+  
+    @include min-width-1168px {
+      width: 80%;
+    }
+  }
+  
+  .width-80 {
+    width: 80%;
+    margin: 0 auto;
+  
+    @include max-width-64em {
+      width: 90%;
+    }
+  
+    @include max-width-568px {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .width-80 > div:nth-child(2) {
+    width: 80%!important;
+  
+    @include min-width-781px {
+      margin-left: 1rem;
+    }
+  
+    @include max-width-781px {
+      width: 100%!important;
+    }
+  }
+
+  // Sidebar width
+    .contact-row > div:nth-child(1) {
+    @include max-width-781px {
+      width: 80%!important;
+      margin: 0 auto!important;
+     }
+  
+     @include max-width-568px {
+       width:100%!important;
+     }
+  }
+
+  .contact-row {
+    justify-content: center!important;
+  
+    & > div:nth-child(1) {
+      margin-right: 1rem;
+  
+      @include min-width-1368px {
+        width: 32%!important;
+      }
+  
+      @include min-width-1168px {
+        width: 45%!important;
+      }
+    }
+  
+    & > div:nth-child(2) {
+      padding: 2rem 2rem 0!important;
+    }
+  
+    & table.openingstijden th + td {
+      @include min-width-867px-and-max-width-830px {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  // Contact form container
+    #pgc-35-2-1 {
+    @include max-width-48em {
+      width: 90%!important;
+      margin: 0 auto!important;
+    }
+  }
+
+  div#col-50 {
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
+  }

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAE;;EAEE;AAEF,0BAA2B;EACzB,UAAU,EAAE,IAAI;;AAGlB,+BAAgC;EAC5B,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI",
+"sources": ["../scss/wp-specific.scss"],
+"names": [],
+"file": "wp-specific.css"
+}

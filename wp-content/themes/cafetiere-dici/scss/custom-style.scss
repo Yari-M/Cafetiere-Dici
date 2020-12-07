@@ -1,0 +1,59 @@
+@import 'assets';
+
+@font-face {
+    font-family: 'Coffee at Midnight Demo';
+    src: url('fonts/coffee_at_midnight_demo-webfont.woff2') format('woff2'),
+         url('fonts/coffee_at_midnight_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/Open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/Open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import 'header';
+@import 'custom-grids';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+p {
+    font-family: 'open_sansregular', sans-serif;
+    line-height: pxToRem(36px);
+}
+
+a {
+    font-family: 'open_sansregular', sans-serif;
+}
+
+// Accessibility WCAG
+.pure-menu-children a:focus,
+a:focus, 
+input:focus, 
+textarea:focus, 
+input[type='submit']:focus { 
+    outline: 5px solid #876C57; 
+}
+
+nav a:focus, footer a:focus { outline: 5px solid white; }
+
+.disable-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+@import 'nav';
+@import 'headings';
+@import 'main';
+@import 'footer';

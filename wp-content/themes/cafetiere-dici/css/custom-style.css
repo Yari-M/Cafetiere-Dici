@@ -1,0 +1,1817 @@
+@font-face {
+  font-family: "Coffee at Midnight Demo";
+  src: url("fonts/coffee_at_midnight_demo-webfont.woff2") format("woff2"), url("fonts/coffee_at_midnight_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "open_sansregular";
+  src: url("fonts/Open_sans/opensans-regular-webfont.woff2") format("woff2"), url("fonts/Open_sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+#top__button {
+  position: fixed;
+  right: 1.7rem;
+  bottom: 2.8rem;
+  padding: 1rem;
+  z-index: 9;
+  color: #fff;
+  background: #8B7156;
+  text-decoration: none;
+  outline: 3px solid #fff;
+}
+
+.wp-block-column {
+  border: 1px solid red;
+}
+
+.no-script-notice {
+  display: none;
+}
+
+.actie-header {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: #2a1d17;
+  border-bottom: initial;
+}
+
+.actie-social-media {
+  margin-top: 1rem;
+  width: 100% !important;
+}
+@media screen and (min-width: 64em) {
+  .actie-social-media {
+    position: absolute;
+    top: 10%;
+    width: initial !important;
+    right: 7rem;
+  }
+}
+
+.actie-bar {
+  display: flex;
+  padding: 0 !important;
+  background: #2a1d17;
+}
+
+.actie__titel {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.actie__info {
+  position: relative;
+}
+.actie__info p {
+  font-family: "open_sansregular", sans-serif;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 47.9375em) {
+  .actie__info p {
+    padding: 1rem;
+  }
+}
+
+header > .top-bar,
+header > .actie-bar {
+  padding: 2rem 0 1rem 2rem;
+}
+@media screen and (max-width: 31.25em) {
+  header > .top-bar,
+header > .actie-bar {
+    padding-right: 1rem;
+  }
+}
+header > .top-bar + .pure-g,
+header > .actie-bar + .pure-g {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  header > .top-bar + .pure-g,
+header > .actie-bar + .pure-g {
+    position: relative;
+  }
+}
+
+header > .top-bar {
+  border-bottom: 6px solid #B78142;
+}
+
+.pure-g.video-home {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+}
+.pure-g.video-home video {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .pure-g.video-home video {
+    max-width: 135%;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  .pure-g.video-home video {
+    position: initial;
+    height: 1% !important;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  .pure-g.video-home .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+#header-image {
+  width: 100%;
+  height: 1%;
+}
+
+header .follow-us {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Coffee at Midnight Demo" !important;
+  font-size: 24px;
+}
+@media screen and (max-width: 31.25em) {
+  header .follow-us > .text {
+    position: initial;
+  }
+}
+@media screen and (min-width: 31em) and (max-width: 62em) {
+  header .follow-us > .text {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 31em) and (max-width: 62em) and (-ms-high-contrast: none), screen and (min-width: 31em) and (max-width: 62em) and (-ms-high-contrast: active) {
+  header .follow-us > .text {
+    position: static;
+  }
+}
+@media screen and (max-width: 48em) {
+  header .follow-us {
+    position: initial;
+    right: 0;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 48em) and (-ms-high-contrast: none), screen and (max-width: 48em) and (-ms-high-contrast: active) {
+  header .follow-us {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  header .follow-us {
+    display: none;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  header .follow-us {
+    position: initial;
+  }
+}
+@media screen and (min-width: 1468px) {
+  header .follow-us {
+    right: -6rem;
+  }
+}
+
+header .social-media {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 48em) {
+  header .social-media {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 48em) and (-ms-high-contrast: none), screen and (max-width: 48em) and (-ms-high-contrast: active) {
+  header .social-media {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  header .social-media {
+    width: initial;
+  }
+}
+@media screen and (max-width: 31.25em) and (-ms-high-contrast: none), screen and (max-width: 31.25em) and (-ms-high-contrast: active) {
+  header .social-media {
+    width: 50%;
+  }
+}
+
+header .caffe-latte {
+  width: 96px;
+  height: 64px;
+}
+@media screen and (max-width: 48em) {
+  header .caffe-latte {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  header .caffe-latte-c {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 568px) {
+  header .caffe-latte-c {
+    width: 25%;
+  }
+}
+
+header .social-icon {
+  margin: 0 1rem;
+  width: 3.125rem;
+}
+@media screen and (max-width: 31.25em) {
+  header .social-icon {
+    margin-right: 0;
+  }
+}
+
+header .logo-container {
+  position: absolute;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  header .logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  header .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  header .logo-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 48em) {
+  header .logo-container {
+    width: 100%;
+  }
+  header .logo-container > a {
+    text-align: center;
+  }
+}
+@media only screen and (width: 48em) {
+  header .logo-container {
+    width: 60%;
+  }
+}
+
+header .logo {
+  width: 21.875rem;
+}
+@media screen and (min-width: 48em) {
+  header .logo {
+    height: 21.875rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  header .logo {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 48em) and (-ms-high-contrast: none), screen and (max-width: 48em) and (-ms-high-contrast: active) {
+  header .logo {
+    width: 75%;
+  }
+}
+@media screen and (width: 48em) {
+  header .logo {
+    width: 40vw;
+    transform: initial;
+    left: 0;
+  }
+}
+@media screen and (max-width: 31.25em) and (-ms-high-contrast: none), screen and (max-width: 31.25em) and (-ms-high-contrast: active) {
+  header .logo {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1468px) {
+  header .logo {
+    width: 26rem;
+  }
+}
+
+.width-58 {
+  width: 58.3333%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1224px) {
+  .width-58 {
+    width: 70.3333%;
+  }
+}
+@media screen and (max-width: 64em) {
+  .width-58 {
+    width: 80%;
+  }
+}
+
+.width-80 {
+  padding: 0 2rem;
+}
+@media screen and (min-width: 48em) {
+  .width-80 {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .width-80 {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .width-80 {
+    width: 80%;
+  }
+}
+
+.width-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 64em) {
+  .width-80 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .width-80 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.width-80 > div:nth-child(2) {
+  width: 80% !important;
+}
+@media only screen and (min-width: 781px) {
+  .width-80 > div:nth-child(2) {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .width-80 > div:nth-child(2) {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 781px) {
+  .contact-row > div:nth-child(1) {
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (max-width: 568px) {
+  .contact-row > div:nth-child(1) {
+    width: 100% !important;
+  }
+}
+
+.contact-row {
+  justify-content: center !important;
+}
+.contact-row > div:nth-child(1) {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 1368px) {
+  .contact-row > div:nth-child(1) {
+    width: 32% !important;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .contact-row > div:nth-child(1) {
+    width: 45% !important;
+  }
+}
+.contact-row > div:nth-child(2) {
+  padding: 2rem 2rem 0 !important;
+}
+@media only screen and (min-width: 48em) and (max-width: 51.875em) {
+  .contact-row table.openingstijden th + td {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  #pgc-35-2-1 {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+
+div#col-50 {
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+p {
+  font-family: "open_sansregular", sans-serif;
+  line-height: 2.25rem;
+}
+
+a {
+  font-family: "open_sansregular", sans-serif;
+}
+
+.pure-menu-children a:focus,
+a:focus,
+input:focus,
+textarea:focus,
+input[type=submit]:focus {
+  outline: 5px solid #876C57;
+}
+
+nav a:focus, footer a:focus {
+  outline: 5px solid white;
+}
+
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+nav.pure-u-md-6-24 {
+  width: 30%;
+  background: linear-gradient(to right, transparent, #ba803b);
+  border-left: 4px solid #ba803b;
+  position: absolute;
+  right: 0;
+}
+@media screen and (width: 48em) {
+  nav.pure-u-md-6-24 {
+    right: 0;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  nav.pure-u-md-6-24 {
+    position: static;
+    background: #ce9e64;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  nav.pure-u-md-6-24 {
+    width: 40%;
+  }
+}
+
+nav div.pure-menu.custom-restricted-width a.pure-menu-link {
+  font-family: "Coffee at Midnight Demo";
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 1.5rem 12rem 1.5rem 4rem;
+  margin: 1rem auto;
+  width: 50%;
+  color: #fff;
+}
+@media screen and (max-width: 47.9375em) {
+  nav div.pure-menu.custom-restricted-width a.pure-menu-link {
+    width: 85%;
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    white-space: normal;
+  }
+}
+
+.pure-menu-children .pure-menu-link {
+  width: initial !important;
+}
+
+nav div.pure-menu.custom-restricted-width ul.pure-menu-children {
+  padding: 0.5rem;
+}
+nav div.pure-menu.custom-restricted-width ul.pure-menu-children a.pure-menu-link {
+  margin: 0 auto;
+  padding: 1.5rem 13.5rem 1.5rem 4rem;
+}
+
+nav .pure-menu-item.pure-menu-selected > a {
+  border: 5px solid #8b7156;
+  border-radius: 0.75rem;
+  background: #E4E0D5;
+  color: #000 !important;
+}
+
+nav .pure-menu-children .pure-menu-selected > a {
+  background: #8B7156 !important;
+  color: #fff !important;
+}
+
+nav a.pure-menu-link {
+  position: relative;
+}
+nav a.pure-menu-link::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../img/icons/bean.svg") no-repeat;
+  z-index: 1;
+}
+
+nav ul ul.pure-menu-children {
+  width: 130%;
+}
+nav ul ul.pure-menu-children > .pure-menu-item > a.pure-menu-link {
+  color: black;
+}
+@media screen and (min-width: 47.9375em) {
+  nav ul ul.pure-menu-children {
+    width: 120%;
+  }
+}
+@media screen and (min-width: 63.938em) {
+  nav ul ul.pure-menu-children {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  nav ul ul.pure-menu-children {
+    width: 110%;
+  }
+}
+@media screen and (min-width: 1368px) {
+  nav ul ul.pure-menu-children {
+    width: 88%;
+  }
+}
+@media screen and (min-width: 1568px) {
+  nav ul ul.pure-menu-children {
+    width: 84%;
+  }
+}
+@media screen and (min-width: 1768px) {
+  nav ul ul.pure-menu-children {
+    width: 80%;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav ul ul.pure-menu-children > .pure-menu-item > .pure-menu-link {
+    white-space: pre-wrap;
+  }
+}
+
+nav .pure-menu-children {
+  background: #E4E0D5;
+}
+@media screen and (max-width: 47.9375em) {
+  nav .pure-menu-children {
+    background: initial;
+  }
+}
+nav .pure-menu-children a.pure-menu-link {
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+nav .pure-menu-has-children > .pure-menu-link:after {
+  content: initial;
+}
+
+nav .pure-menu-active > .pure-menu-link,
+.pure-menu-link:focus,
+.pure-menu-link:hover {
+  background: initial;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav .pure-menu-active > .pure-menu-link,
+.pure-menu-link:focus,
+.pure-menu-link:hover {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .pure-menu-active > .pure-menu-children,
+.pure-menu-allow-hover:hover > .pure-menu-children {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  nav .pure-menu-active > .pure-menu-children,
+.pure-menu-has-children:hover .pure-menu-children {
+    display: block;
+    left: -230px;
+    padding: 1rem;
+    border: 5px solid #8b7156;
+    border-radius: 12px;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 47.9375em) {
+  nav .pure-menu-active > .pure-menu-children,
+.pure-menu-has-children:hover .pure-menu-children {
+    border: none;
+    left: 0;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  nav ul > li.pure-menu-item.pure-menu-has-children.pure-menu-active > ul > li.pure-menu-item.pure-menu-has-children.pure-menu-active > ul {
+    left: -1.3rem;
+  }
+}
+
+nav .menu-btn {
+  display: none;
+}
+
+.menu-active {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visually_hidden {
+  opacity: 0;
+}
+
+.dropdown_bg {
+  background: #ba803b;
+}
+
+.dropdown_bg a.pure-menu-link {
+  left: 1.5rem;
+}
+@media screen and (max-width: 47.9375em) {
+  .dropdown_bg a.pure-menu-link {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 47.9375em) {
+  #menu-hoofdmenu {
+    transition: all 1s ease-in;
+  }
+
+  nav .pure-menu-list > .pure-menu-item:nth-child(1) > .pure-menu-link {
+    margin-top: 0 !important;
+  }
+
+  .pure-menu-list > li {
+    height: 120px !important;
+  }
+  .pure-menu-list > li:last-child {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 47.9375em) and (max-width: 48em) {
+  .pure-menu-list > li {
+    display: flex;
+  }
+  .pure-menu-list > li ul li {
+    height: 120px !important;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  nav .menu-icon {
+    cursor: pointer;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  nav .menu-icon .nav-icon {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: white;
+    transition: background 0.2s ease-out;
+  }
+  nav .menu-icon .nav-icon::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    transition: all 0.2s ease-out;
+  }
+  nav .menu-icon .nav-icon::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    transition: all 0.2s ease-out;
+  }
+}
+.pure-g.title,
+.title {
+  text-align: center;
+}
+.pure-g.title.no-margin h2, .pure-g.title h3, .pure-g.title h4, .pure-g.title h5, .pure-g.title h6,
+.title.no-margin h2,
+.title h3,
+.title h4,
+.title h5,
+.title h6 {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 568px) {
+  .pure-g.title {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .actie_titel {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .panel-grid-cell {
+    width: 100% !important;
+  }
+}
+
+.pure-u-1.title {
+  word-break: break-word;
+}
+@media screen and (max-width: 47.9375em) {
+  .pure-u-1.title {
+    font-size: 1.8rem;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Coffee at Midnight Demo" !important;
+  padding: 1rem;
+  font-weight: normal;
+  background: #E4E0D5;
+  border: 5px solid #876C57;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  margin: 3rem 0;
+  width: 18em !important;
+}
+@media screen and (max-width: 48em) {
+  h1 {
+    width: 90%;
+    padding: 1rem 3rem;
+  }
+}
+h1::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -3.125rem;
+  width: 100px;
+  height: 100px;
+  background: url(../img/icons/cafe_latte.svg) no-repeat;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  h1::before {
+    top: -15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 928px) {
+  h1::before {
+    top: 5px;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  h1::before {
+    display: none;
+  }
+}
+h1::after {
+  content: url("../img/icons/bean.svg");
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 3.75rem;
+  height: 3.75rem;
+}
+@media screen and (min-width: 768px) and (max-width: 928px) {
+  h1::after {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  h1::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 58em) {
+  h1::after {
+    top: 10%;
+    right: -24px;
+  }
+}
+
+#marker-content h1 {
+  margin: initial;
+  padding: initial;
+  font-weight: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  text-align: initial;
+}
+#marker-content h1::before {
+  content: initial;
+}
+#marker-content h1::after {
+  content: initial;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 568px) {
+  h2 {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  h2 {
+    width: 25em !important;
+  }
+}
+
+h3,
+h5,
+span.bedrijfsnaam {
+  font-family: "Coffee at Midnight Demo" !important;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 48em) {
+  .pure-g.koffieproducerende-landen h5,
+.pure-g.koffie-proces h5 {
+    position: relative;
+    left: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .pure-g.koffieproducerende-landen h5 {
+    margin-left: 6rem;
+  }
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+main > .pure-g {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 48em) {
+  main > .pure-g {
+    position: relative;
+    z-index: 10;
+    background: white;
+  }
+}
+
+.page-introduction {
+  margin: 0 auto 3rem;
+}
+@media screen and (min-width: 938px) and (max-width: 1280px) {
+  .page-introduction .pure-u-md-18-24.pure-u-lg-14-24 {
+    width: 70.3333%;
+  }
+}
+
+.pure-g {
+  padding: 0 2rem;
+}
+
+.pure-img {
+  margin-bottom: 2rem;
+}
+
+.pure-u-xl-14-24 {
+  display: flex;
+  margin: 0 auto;
+}
+
+.no-posts {
+  text-align: center;
+}
+
+.picture + p {
+  text-align: left;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 568px) {
+  .picture {
+    margin-right: 0;
+    min-height: 1px;
+  }
+}
+
+.img-right {
+  text-align: right;
+}
+@media screen and (max-width: 48em) {
+  .img-right {
+    text-align: center;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 568px) {
+  .actie {
+    flex-direction: column;
+  }
+}
+
+.logo-leverancier {
+  text-align: center;
+}
+
+.tekst-leverancier {
+  padding: 2rem 1.5rem;
+  background: #e6e0d4;
+  border: 5px solid #8b7156;
+}
+
+.plantage .widget-title {
+  margin-bottom: 0;
+  padding: 1rem 3rem;
+  background: #8B7156;
+  color: white;
+  letter-spacing: 3px;
+}
+@media screen and (min-width: 48em) {
+  .plantage .widget-title {
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+  }
+}
+.plantage .textwidget {
+  padding: 1rem 2rem 2rem;
+  border: 5px solid #8b7156;
+}
+@media screen and (min-width: 48em) {
+  .plantage .textwidget {
+    padding: 1rem 3rem 3rem;
+  }
+}
+
+.openingstijden th {
+  font-weight: normal;
+}
+
+.koffie-proces > img {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border: 5px solid #8b7156;
+  border-radius: 100%;
+  background: url(../img/Een_kopje_koffie.jpg) center/cover no-repeat;
+  background-color: #e6e0d4;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+img {
+  border-style: none;
+  width: 100%;
+  height: auto;
+}
+
+.github__logo {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
+.contact-row, .maps-row {
+  width: 75%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 67em) {
+  .contact-row, .maps-row {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 568px) {
+  .contact-row, .maps-row {
+    padding: 0;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 450px;
+}
+
+#bodyContent {
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+#bodyContent img {
+  width: 40px !important;
+}
+#bodyContent > div {
+  display: flex;
+}
+#bodyContent li {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.maps-row {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 568px) {
+  .maps-row h3 {
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
+.gm-style-iw {
+  border: 5px solid #8b7156 !important;
+  background: #E4E0D5 !important;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar {
+  width: 18px;
+  height: 12px;
+  -webkit-appearance: initial !important;
+  border: 1px solid #8b7156 !important;
+  background: #E4E0D5 !important;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+  background: initial !important;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: 2px solid #8b7156;
+}
+
+input[type=submit] {
+  padding: 1rem;
+  border: 5px solid #8b7156;
+  border-radius: 0.75rem;
+  background: #e6e0d4;
+}
+
+.contact-informatie {
+  position: relative;
+  display: inline-block;
+  white-space: pre-line;
+  border: 5px solid #8b7156;
+  background: #E4E0D5;
+}
+.contact-informatie ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contact-informatie img {
+  margin-bottom: 2rem;
+}
+@media screen and (width: 48em) {
+  .contact-informatie img {
+    max-width: 75% !important;
+  }
+}
+.contact-informatie > div {
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (max-width: 48em) {
+  .contact-informatie {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-informatie {
+  padding: 1rem 2.5rem;
+}
+.contact-informatie::before, .contact-informatie::after {
+  content: url(../img/icons/bean.svg);
+  position: absolute;
+  right: -1rem;
+  width: 45px;
+}
+@media screen and (max-width: 48em) {
+  .contact-informatie::before, .contact-informatie::after {
+    right: 1rem;
+  }
+}
+.contact-informatie::before, .contact-informatie i[icons]::before {
+  top: -1.5rem;
+}
+.contact-informatie::after, .contact-informatie i[icons]::after {
+  bottom: -1.5rem;
+}
+.contact-informatie::before {
+  content: url(../img/icons/bean.svg);
+  position: absolute;
+  width: 45px;
+}
+@media screen and (max-width: 48em) {
+  .contact-informatie::before {
+    right: 1rem;
+  }
+}
+.contact-informatie::after {
+  content: url(../img/icons/bean.svg);
+  position: absolute;
+  width: 45px;
+}
+@media screen and (max-width: 48em) {
+  .contact-informatie::after {
+    right: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .contact-informatie {
+    width: 100%;
+  }
+}
+
+i[icons]::before, i[icons]::after {
+  content: url("../img/icons/cafe_latte.svg");
+  position: absolute;
+  left: -2rem;
+  width: 70px;
+}
+@media screen and (max-width: 48em) {
+  i[icons]::before, i[icons]::after {
+    left: 1rem;
+  }
+}
+
+i[icons]::before {
+  top: -1.5rem;
+}
+
+i[icons]::after {
+  bottom: -1rem;
+}
+
+i[icons]::before {
+  content: url("../img/icons/cafe_latte.svg");
+  position: absolute;
+  top: -1rem;
+  width: 70px;
+}
+
+i[icons]::after {
+  content: url("../img/icons/cafe_latte.svg");
+  position: absolute;
+  width: 70px;
+}
+@media screen and (max-width: 48em) {
+  i[icons]::after {
+    left: 1rem;
+  }
+}
+
+#pg-8-0, #pg-8-1, #pg-8-2, #pg-8-3, #pl-8 .so-panel {
+  margin-bottom: 0 !important;
+}
+
+.wp-block-group__inner-container {
+  justify-content: center;
+  display: flex;
+}
+
+#cboxTitle {
+  bottom: -5px;
+}
+
+.custom-slider {
+  margin: 0 auto;
+}
+
+main .pure-g.temp-sale {
+  justify-content: center;
+  margin-bottom: 3.5rem;
+}
+main .pure-g.temp-sale:nth-child(odd) {
+  background: url("../img/koffiestruik_bg.png") no-repeat;
+}
+main .pure-g.temp-sale:nth-child(even) {
+  background: url("../img/koffiebonen_bg.png") no-repeat;
+}
+main .pure-g.temp-sale > .pure-u-md-18-24 {
+  padding: 1rem 3rem;
+  margin: -1rem 0;
+  border: 2px solid #8b7156;
+  border-radius: 12px;
+  background: #e6e0d4;
+}
+@media screen and (max-width: 31.25em) {
+  main .pure-g.temp-sale > .pure-u-md-18-24 {
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  main .pure-g.temp-sale {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  #acties > div {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .temp-sale-img {
+    margin: 0 auto;
+  }
+}
+
+a.more {
+  padding: 1.5rem;
+  width: 30%;
+  border-radius: 12px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border: 5px solid #8b7156;
+  background: #e6e0d4;
+}
+@media screen and (min-width: 1528px) {
+  a.more {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 48em) {
+  a.more {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 928px) {
+  a.more {
+    width: 35%;
+  }
+}
+@media screen and (width: 48em) {
+  a.more {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 568px) {
+  a.more {
+    width: 100%;
+  }
+}
+
+div.openingstijden-col {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 928px) {
+  div.openingstijden-col {
+    margin-left: 4rem;
+  }
+}
+
+table.openingstijden {
+  font-family: "Coffee at Midnight Demo";
+  font-size: 1.25rem;
+  border-collapse: collapse;
+}
+table.openingstijden th,
+table.openingstijden td {
+  padding-bottom: 1rem;
+  text-align: left;
+}
+table.openingstijden th + td {
+  padding-left: 3rem;
+}
+@media screen and (max-width: 31.25em) {
+  table.openingstijden th + td {
+    padding-left: 1rem;
+  }
+}
+
+.h3-counter-area {
+  counter-reset: section;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 568px) {
+  .h3-counter-area {
+    padding: 0 0.5rem;
+  }
+}
+
+.pure-g.koffieproducerende-landen,
+.pure-g.koffie-proces {
+  padding: 0;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pure-g.koffieproducerende-landen .country-bg-col,
+.pure-g.koffie-proces .country-bg-col {
+  text-align: center;
+}
+.pure-g.koffieproducerende-landen img.country-bg,
+.pure-g.koffie-proces img.country-bg {
+  max-width: 100%;
+}
+
+.pure-g.koffieproducerende-landen .country-icon {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 1rem;
+}
+@media screen and (max-width: 48em) {
+  .pure-g.koffieproducerende-landen .country-icon {
+    top: -1.5rem;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  .pure-g.koffieproducerende-landen .country-icon {
+    left: 0;
+  }
+}
+@media screen and (max-width: 48em) {
+  .pure-g.koffieproducerende-landen > div:nth-child(1) {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 48em) {
+  .pure-g.koffieproducerende-landen .textwidget {
+    position: relative;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pure-g.koffieproducerende-landen .pure-u-1.pure-u-md-11-24 {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}
+.pure-g.koffieproducerende-landen .pure-u-md-11-24 {
+  position: absolute;
+  padding: 1rem 3rem !important;
+  width: 60%;
+}
+@media screen and (max-width: 48em) {
+  .pure-g.koffieproducerende-landen .pure-u-md-11-24 {
+    position: static;
+    width: 100%;
+    padding: 1rem 2rem !important;
+    margin-right: 0;
+    background: white;
+    background: -moz-linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+    background: -webkit-linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+    background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.8) 70%, rgba(26, 55, 65, 0) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#1a3741", GradientType=1);
+  }
+}
+
+#pl-55 > div:not(:first-child):nth-child(even) .pure-u-md-11-24 {
+  margin-right: 10vw;
+  position: absolute;
+  right: 0;
+  background: white;
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, white 50%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, white 50%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.85) 20%, white 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+@media screen and (min-width: 48em) and (max-width: 80em) {
+  #pl-55 > div:not(:first-child):nth-child(even) .pure-u-md-11-24 {
+    margin-right: 10vw;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #pl-55 > div:not(:first-child):nth-child(even) .pure-u-md-11-24 {
+    margin-right: 0;
+    position: static;
+  }
+}
+#pl-55 > div:not(:first-child):nth-child(odd) {
+  direction: rtl;
+}
+#pl-55 > div:not(:first-child):nth-child(odd) .pure-u-md-11-24 {
+  direction: ltr;
+  margin-left: 10vw;
+  position: absolute;
+  left: 0;
+  background: white;
+  background: -moz-linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0.85) 20%);
+  background: -webkit-linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0.85) 20%);
+  background: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0.85) 20%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+@media screen and (min-width: 48em) and (max-width: 80em) {
+  #pl-55 > div:not(:first-child):nth-child(odd) .pure-u-md-11-24 {
+    margin-left: 10vw;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #pl-55 > div:not(:first-child):nth-child(odd) .pure-u-md-11-24 {
+    margin-left: 0;
+    position: static;
+  }
+}
+
+div.pure-g.koffie-proces {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+div.pure-g.koffie-proces:nth-child(even) {
+  direction: rtl;
+}
+
+div.koffie-proces > .pure-u-md-3-24 {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background: red;
+  border: 5px solid #8b7156;
+  border-radius: 100%;
+  background: url(../img/Een_kopje_koffie.jpg) center/cover no-repeat;
+  background-color: #e6e0d4;
+}
+
+img.koffie-proces {
+  max-width: 100%;
+  height: auto;
+}
+
+div.proces-uitleg {
+  padding: 1rem 2rem 3rem;
+  border: 2px solid #8b7156;
+  border-radius: 12px;
+  background: #e6e0d4;
+}
+div.proces-uitleg p {
+  overflow-wrap: break-word;
+}
+div.proces-uitleg:nth-child(even) {
+  direction: ltr;
+}
+@media screen and (max-width: 400px) {
+  div.proces-uitleg {
+    position: relative;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  div.proces-uitleg {
+    width: 65%;
+  }
+}
+
+div.proces-uitleg > h3 {
+  display: flex;
+  align-items: baseline;
+  font-size: 2rem;
+}
+div.proces-uitleg > h3::before {
+  counter-increment: section;
+  content: counter(section) "#";
+  margin-right: 2rem;
+  font-size: 3rem;
+  height: 55px;
+}
+@media screen and (max-width: 400px) {
+  div.proces-uitleg > h3::before {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 400px) {
+  div.proces-uitleg > h3 {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .panel-grid-cell {
+    min-height: 1px;
+  }
+}
+footer {
+  padding: 1.5rem 5.5rem;
+  background: #8B7156;
+}
+@media screen and (max-width: 1168px) {
+  footer {
+    padding: 1.5rem 3.5rem;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  footer {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  footer {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  footer {
+    padding: 1rem;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  footer {
+    padding: 1.5rem;
+  }
+}
+footer .copy {
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+footer ul li {
+  padding: 0.3rem 0;
+}
+footer ul li:first-of-type {
+  padding-top: 0;
+}
+
+footer > .pure-g {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+footer > .pure-g:nth-of-type(2) {
+  padding: 0 !important;
+}
+footer > .pure-g.adres {
+  margin-bottom: 2.5rem;
+  padding: 1rem 6rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #fff;
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  footer > .pure-g.adres {
+    padding: 1rem 0 1rem 1rem;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  footer > .pure-g.adres {
+    padding: 1rem !important;
+  }
+}
+footer > .pure-g > .pure-u-md-7-24 {
+  padding: 1.25rem;
+  border: 1px solid #fff;
+}
+footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+    justify-content: space-around;
+  }
+}
+@media screen and (-ms-high-contrast: none) and (max-width: 48em), screen and (-ms-high-contrast: active) and (max-width: 48em) {
+  footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+    padding: 0 4rem;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+    padding: 0 20%;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1368px) {
+  footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+    padding: 0 8rem;
+  }
+  @supports (-ms-ime-align: auto) {
+    footer > .pure-g > .pure-u-md-7-24:last-of-type > div {
+      padding: 0 6rem;
+      justify-content: space-between;
+    }
+  }
+}
+footer > .pure-g .social-icon {
+  width: 4rem;
+}
+@media only screen and (min-width: 35.5em) and (max-width: 54.25em) {
+  footer > .pure-g .social-icon {
+    margin: 0 1.5rem;
+  }
+}
+
+footer h3 {
+  font-family: "Coffee at Midnight Demo";
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 868px) {
+  footer h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  footer .pure-u-1.pure-u-md-8-24 {
+    margin-top: 1rem;
+  }
+}
+
+footer .address,
+.phone-number {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 54.5em) {
+  .footer-last-row {
+    padding: 0;
+    background: #8B7156;
+    position: relative;
+    z-index: 9;
+  }
+}
+
+footer .useful-details {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 48em) {
+  footer .useful-details {
+    text-align: center;
+  }
+}
+footer .useful-details > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 48em) {
+  footer .useful-details > a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 49%;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  footer .useful-details > a {
+    display: block;
+  }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  footer .useful-details > a {
+    padding: 0 0.6rem;
+  }
+}
+@media screen and (width: 48em) {
+  footer .useful-details > a {
+    padding: initial;
+  }
+}
+footer .useful-details > a:first-of-type {
+  padding-left: 0;
+}
+
+footer .widget.widget_text {
+  list-style: none;
+}
+
+footer #menu-footer-menu > li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 54.5em) {
+  .footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+    width: 31% !important;
+  }
+}
+@media screen and (max-width: 47.9375em) {
+  .footer-column-1,
+.footer-column-2,
+.footer-column-3 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 54.5em) {
+  .footer-column-3 {
+    border: 1px solid #fff;
+  }
+  .footer-column-3 h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  .footer-column-3 {
+    width: 100%;
+  }
+  @supports (-ms-ime-align: auto) {
+    .footer-column-3 > div img {
+      margin: 0 3rem;
+    }
+  }
+}
+
+/*# sourceMappingURL=custom-style.css.map */
