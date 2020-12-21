@@ -3,6 +3,7 @@
 <h1 style="text-align: center;">Documentation</h1>
 
 <h2 style="text-align: center;">Cafetiére D'ici</h2>
+
 [View the demo](https://yari-m.github.io/Cafetiere-Dici "A link that redirects to the demo of this repository")
 
 <hr>
